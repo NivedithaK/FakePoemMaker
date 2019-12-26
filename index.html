@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  height: 100vh;
-  padding: 10px;
-  
-}
+      .column {
+        float: left;
+        width: 50%;
+        height: 100vh;
+        padding: 10px;
+      }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
 
-.bodytext {
-    text-align: center;
-    font-size: 16pt;
-    font-family: "Geneva";
-    color: #48474F;
-}
+      .bodytext {
+          text-align: center;
+          font-size: 16pt;
+          font-family: "Geneva";
+          color: #48474F;
+      }
 
+      button {
+        background-image: url("https://lh3.googleusercontent.com/QoFjX_FLx6zjr3720IEwQ_bfUvrwRjKhyR4ztuBC2aVszFSNW1hl8Vj4t61KxrD6CaDe6IXr4Sxe5XB_JYwy9hmTCbCLkDPP30y4HaeFN_JjiQXcpyZfep1X9XGtrrHXHXJYPqJSSG3YI01EiKn5LvnlqgvgYQcj6THX6Oj9wYwVcyBtvljXEIVYGo4Tt_EcJa9vfJJpNJ0uQDpCV4iTCvklRTgUiMAHVeMEiNVmSt_jDb0HLFEuM5-HZXJR9xIhaXJjTHrWJDrVQ0F4U83QUYfhYGkVdBxVVyCGfZqoz9ym1KM3GI0QCFhUzeD78yAAd-QPkghvcAd_EMYkaXKXZCtpLm-MKy39SH-rPYWweTxEzOvl2GwLySbVTjIYQW6QDI8kzFYZzwD946aEpdEsRRjChvz8Ri8SnqNweStWYJWSLPdEwOP-dNLmag-ghFreSt_E8hHtQKKPDAS5SL7sg1CVh_FcjShx4Qge9YMWIR9QRBfVZ44TaUQXboZvIa-uVDwwiEt1lOKzlxqeXRpM8FZHWzuI_UQmKlq7xMhQGTBgjeBKuCMy5YHZOdiLsuGqM7uPXCere7i8bKQOZd_TAo0fpu74YtStYvVcn8NJ_W_jhgbWKwGoqMgTC3PbsHHeZRzTsNaVzjuA8Hdd8rqBA5M7rp86WN8hj3Agxcd-5eK58vCzDHkr8PrzvcB_O19zfUGwFidiCvDx9cqUOMrhLc4xfzFJcM9zOSFAuha80DMIseXt=w1460-h406-no");
+        background-size: contain;
+        color: #FADFA8; 
+        background-repeat: no-repeat;
+      }
 
+    </style>
 
-button{
-  background-image: url("https://lh3.googleusercontent.com/QoFjX_FLx6zjr3720IEwQ_bfUvrwRjKhyR4ztuBC2aVszFSNW1hl8Vj4t61KxrD6CaDe6IXr4Sxe5XB_JYwy9hmTCbCLkDPP30y4HaeFN_JjiQXcpyZfep1X9XGtrrHXHXJYPqJSSG3YI01EiKn5LvnlqgvgYQcj6THX6Oj9wYwVcyBtvljXEIVYGo4Tt_EcJa9vfJJpNJ0uQDpCV4iTCvklRTgUiMAHVeMEiNVmSt_jDb0HLFEuM5-HZXJR9xIhaXJjTHrWJDrVQ0F4U83QUYfhYGkVdBxVVyCGfZqoz9ym1KM3GI0QCFhUzeD78yAAd-QPkghvcAd_EMYkaXKXZCtpLm-MKy39SH-rPYWweTxEzOvl2GwLySbVTjIYQW6QDI8kzFYZzwD946aEpdEsRRjChvz8Ri8SnqNweStWYJWSLPdEwOP-dNLmag-ghFreSt_E8hHtQKKPDAS5SL7sg1CVh_FcjShx4Qge9YMWIR9QRBfVZ44TaUQXboZvIa-uVDwwiEt1lOKzlxqeXRpM8FZHWzuI_UQmKlq7xMhQGTBgjeBKuCMy5YHZOdiLsuGqM7uPXCere7i8bKQOZd_TAo0fpu74YtStYvVcn8NJ_W_jhgbWKwGoqMgTC3PbsHHeZRzTsNaVzjuA8Hdd8rqBA5M7rp86WN8hj3Agxcd-5eK58vCzDHkr8PrzvcB_O19zfUGwFidiCvDx9cqUOMrhLc4xfzFJcM9zOSFAuha80DMIseXt=w1460-h406-no");
-  background-size: contain;
-  color: #FADFA8; 
-  background-repeat: no-repeat;
-}
+    <script src="poemgenerator.js"></script>
 
-</style>
+  </head>
 
-<script src="poemgenerator.js"></script>
-
-</head>
-<body BGCOLOR="FADFA8;" style="margin:0;">
-
-<div class="row">
-  <div class="column" style="background-color:#FADFA8;">
-    <img src="https://lh3.googleusercontent.com/q8ITXyKCKxawA6PddxxDvcQQCi6Ncps8WDFYCCJ2GFakpWWuLWdJ-qj3QSnagLxE8TWpH6WfMSzCfKX9q9XBNGJxDuOGJ1leFUFesEoCfkTOQ55svSfGFy4wXjd0uVQR3lmEmZzilSGbTl29B5B_uESpsgVsyogdd7Uymd5crfsluiUtNhSp4E1txg-FF_HBSZn2aIoWb9YIc_IFRWq0vvZK78qClKHDH6IPM-CWdhezpZO0rpcHZJO7CgLPXnfNyYOBg4rlV4cSxs1_Yk-Lr-qHZCuQ_C8JOhtigyOLydMeIyuPwx8Vyanyg6jLJ9HxXIVevCI2WMypTzumYgs830m5tvA8GwEed9F7SnPL8f71xkdBAyKhiH88NvW8DGXcpBSDncjnfTC-yDPzeWU-YnFv632zdp-RTRTrOM6aTlnRnQfVHzoXYGLids-3XFFkhpXeydmhxEZl7gZlzUUPWeeC_ZX_RuRAfqiUTC7_-H5T2EUQPa_CoYakwYsKhrDdwb4tFEAP6t0NsXkk1xgqh9JQiTJZjoep7eoDDdtPBahKGV4V-PZw2C3z70HGrAsKQWsvvxMW556HyQbjnjUd4h3rjIpjHaT7g_ObdA-UrZ__IFp7kiqc5tAcskcLwr4YASrA_HgyuyMrIrN4hVPGkh2HuG3SlOLQgicVott4Zmj09Rc4W8HU4fn3Cmb235T2-wxe4w4sJAZno-Sxrn9N5egT3CFCyyuGns3ccCFyzbYrOSlN=w1460-h1048-no" alt="Fake Poetry Maker" style="width:500px;height:357px;" class="center">
-        <p></p>
-        
-
-        <button onclick="makePoem()" style="width:197px;height:56px;" class="center"></button>
-        
-
-  </div>
-  <div class="column" style="background-color:#BDBF90;">
-    <img src="https://lh3.googleusercontent.com/Fn0HIKtfQIg4QIVrBDaHN4I43PAh-MBDUZMdWBm3wQ0_Q4rZWKAsJnmFobNZIERJBedRABp4pc9DZ-e42qQThEYlpRs25CDbDfAHTwa4BTTJ994zqyIk4WwGOAmT_NsBBWcJqZ_tD3Y5jA-xhOBJi4TGVYkPW-0nX7UyBLIMS5xb0UY1i1oFE9ZTsJPWy_lkOaaEPqIti2NiJKeDfo5f2tdV21RItM6BAdlVZjDI7Qj9KBkA4iv2tAbcFkFhUUvHM7D1rCCC2ZNVzguOvJ9dsHj5RMF3f72U0MCKK3J1dKz7GczsWqKf3hGETgI-WU1S4UHX5IuKr7PF1c7g_qLGJwpxzVCL93j5qAA9et5NTSEJKIULLxm37wzVYIVxN6l49zWvNU9GrmQwwcEmvGkDN1Nuv8bXhbOPb5IJ6HwzhSpcWtO_NuYPyhoU0C_xr1442b1adK4rK1zOLmWQVjIuceTF5BswFulw66z3mi8sVoeELihjbmvt5vAVLYh39eJg48PHHjAm6ynQh6aFKJnoSGyZ_1oayMiFG4THhI-Nl3G0_S6pQZfcw-Vky72QyiFaqd_H6FdWAQ0rRxtA2rCqZ-8G-nr2TV-jApDOB6kfjuuw_ynnJ3VofSMx7EgKgCFpWvm57efKH9K_60YYp-psCqwSpXbVwjmy8MluUcau5M-m7mT2xoBhMxQLk5xsBjMRyf_Elo3w5EQk0tlVnRTNw-QE-mjmfZ4xBGy_6KxW4NeLmUzz=w1988-h1019-no" alt="Title" style="width:500px;height:256px;" class="center">
-        <p></p>
-    <p id="poemText" class="bodytext">Click "make a poem"!</p>
-  </div>
-</div>
-
-</body>
+  <body BGCOLOR="FADFA8;" style="margin:0;">
+    <div class="row">
+      <div class="column" style="background-color:#FADFA8;">
+        <img src="https://lh3.googleusercontent.com/q8ITXyKCKxawA6PddxxDvcQQCi6Ncps8WDFYCCJ2GFakpWWuLWdJ-qj3QSnagLxE8TWpH6WfMSzCfKX9q9XBNGJxDuOGJ1leFUFesEoCfkTOQ55svSfGFy4wXjd0uVQR3lmEmZzilSGbTl29B5B_uESpsgVsyogdd7Uymd5crfsluiUtNhSp4E1txg-FF_HBSZn2aIoWb9YIc_IFRWq0vvZK78qClKHDH6IPM-CWdhezpZO0rpcHZJO7CgLPXnfNyYOBg4rlV4cSxs1_Yk-Lr-qHZCuQ_C8JOhtigyOLydMeIyuPwx8Vyanyg6jLJ9HxXIVevCI2WMypTzumYgs830m5tvA8GwEed9F7SnPL8f71xkdBAyKhiH88NvW8DGXcpBSDncjnfTC-yDPzeWU-YnFv632zdp-RTRTrOM6aTlnRnQfVHzoXYGLids-3XFFkhpXeydmhxEZl7gZlzUUPWeeC_ZX_RuRAfqiUTC7_-H5T2EUQPa_CoYakwYsKhrDdwb4tFEAP6t0NsXkk1xgqh9JQiTJZjoep7eoDDdtPBahKGV4V-PZw2C3z70HGrAsKQWsvvxMW556HyQbjnjUd4h3rjIpjHaT7g_ObdA-UrZ__IFp7kiqc5tAcskcLwr4YASrA_HgyuyMrIrN4hVPGkh2HuG3SlOLQgicVott4Zmj09Rc4W8HU4fn3Cmb235T2-wxe4w4sJAZno-Sxrn9N5egT3CFCyyuGns3ccCFyzbYrOSlN=w1460-h1048-no" alt="Fake Poetry Maker" style="width:500px;height:357px;" class="center">
+            <p></p>
+            <button onclick="makePoem()" style="width:197px;height:56px;" class="center"></button>
+      </div>
+      <div class="column" style="background-color:#BDBF90;">
+        <img src="https://lh3.googleusercontent.com/Fn0HIKtfQIg4QIVrBDaHN4I43PAh-MBDUZMdWBm3wQ0_Q4rZWKAsJnmFobNZIERJBedRABp4pc9DZ-e42qQThEYlpRs25CDbDfAHTwa4BTTJ994zqyIk4WwGOAmT_NsBBWcJqZ_tD3Y5jA-xhOBJi4TGVYkPW-0nX7UyBLIMS5xb0UY1i1oFE9ZTsJPWy_lkOaaEPqIti2NiJKeDfo5f2tdV21RItM6BAdlVZjDI7Qj9KBkA4iv2tAbcFkFhUUvHM7D1rCCC2ZNVzguOvJ9dsHj5RMF3f72U0MCKK3J1dKz7GczsWqKf3hGETgI-WU1S4UHX5IuKr7PF1c7g_qLGJwpxzVCL93j5qAA9et5NTSEJKIULLxm37wzVYIVxN6l49zWvNU9GrmQwwcEmvGkDN1Nuv8bXhbOPb5IJ6HwzhSpcWtO_NuYPyhoU0C_xr1442b1adK4rK1zOLmWQVjIuceTF5BswFulw66z3mi8sVoeELihjbmvt5vAVLYh39eJg48PHHjAm6ynQh6aFKJnoSGyZ_1oayMiFG4THhI-Nl3G0_S6pQZfcw-Vky72QyiFaqd_H6FdWAQ0rRxtA2rCqZ-8G-nr2TV-jApDOB6kfjuuw_ynnJ3VofSMx7EgKgCFpWvm57efKH9K_60YYp-psCqwSpXbVwjmy8MluUcau5M-m7mT2xoBhMxQLk5xsBjMRyf_Elo3w5EQk0tlVnRTNw-QE-mjmfZ4xBGy_6KxW4NeLmUzz=w1988-h1019-no" alt="Title" style="width:500px;height:256px;" class="center">
+            <p></p>
+        <p id="poemText" class="bodytext">Click "make a poem"!</p>
+      </div>
+    </div>
+  </body>
 </html>
